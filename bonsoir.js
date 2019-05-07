@@ -28,16 +28,28 @@ class Bonsoir {
       /**
        * Entry Point
        */
-      salutation() {
+      getCurrentSalutation() {
             var hourOfDay = new Date().getHours();
-            var res = new Salutation().salutationFull;
+            var res = new Salutation();
             this.salutationMap.forEach(element => {
                   if (element.timeStart <= hourOfDay && element.timeStop >= hourOfDay) {
-                        res = element.salutationFull;
+                        res = element;
                   }
             });
             return res;
       };
+
+      salutation() {
+            return this.getCurrentSalutation().salutationFull;
+      }
+
+      salutationShort() {
+            return this.getCurrentSalutation().salutationShort;
+      }
+
+      getLocale() {
+            return this.locale;
+      }
 };
 
 var bonsoir = new Bonsoir();
