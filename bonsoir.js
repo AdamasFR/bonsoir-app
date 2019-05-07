@@ -17,10 +17,10 @@ class Salutation {
 
 class Bonsoir {
       constructor() {
-            this.salutationMorning = new Salutation("Bonjour", "bjr", "0600", "1100");
-            this.salutationMidDay = new Salutation("Bonjour", "bjr", "1100", "1800");
-            this.salutationTwilight = new Salutation("Bonsoir", "bsr", "1800", "0000");
-            this.salutationNight = new Salutation("Bonne Nuit", "bnt", "0000", "0600");
+            this.salutationMorning = new Salutation("Bonjour", "bjr", 6, 11);
+            this.salutationMidDay = new Salutation("Bonjour", "bjr", 11, 18);
+            this.salutationTwilight = new Salutation("Bonsoir", "bsr", 18, 0);
+            this.salutationNight = new Salutation("Bonne Nuit", "bnt", 0, 6);
             this.salutationMap = [this.salutationMorning, this.salutationMidDay, this.salutationTwilight, this.salutationNight];
             this.locale = "FR";
       }
@@ -29,7 +29,14 @@ class Bonsoir {
        * Entry Point
        */
       salutation() {
-            return this.salutationMap[0].salutationFull;
+            var hourOfDay = new Date().getHours();
+            var res = new Salutation().salutationFull;
+            this.salutationMap.forEach(element => {
+                  if (element.timeStart < hourOfDay && element.timeStop > hourOfDay) {
+                        res = element.salutationFull;
+                  }
+            });
+            return res;
       };
 };
 
