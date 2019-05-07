@@ -1,0 +1,23 @@
+{
+  "name": "bonsoir.js",
+  "version": "1.0.0",
+  "description": "Get the right salutation at the right time of day",
+  "main": "bonsoir.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamasFR/bonsoir-app.git"
+  },
+  "keywords": [
+    "salutation",
+    "french"
+  ],
+  "author": "Anthony Dumas (@adamas_fr)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdamasFR/bonsoir-app/issues"
+  },
+  "homepage": "https://github.com/AdamasFR/bonsoir-app#readme"
+}
