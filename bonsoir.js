@@ -10,8 +10,8 @@ class Salutation {
       constructor(salutationFull, salutationShort, timeStart, timeStop) {
             this.salutationFull = salutationFull != null ? salutationFull : "Hello";
             this.salutationShort = salutationShort != null ? salutationShort : "hi";
-            this.timeStart = timeStart != null ? timeStart : "0000";
-            this.timeStop = timeStop != null ? timeStart : "0000";
+            this.timeStart = timeStart != null ? timeStart : 0;
+            this.timeStop = timeStop != null ? timeStop : 0;
       }
 }
 
