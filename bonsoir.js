@@ -22,7 +22,7 @@ class Bonsoir {
       constructor() {
             this.salutationMorning = new Salutation("Bonjour", "bjr", 6, 11);
             this.salutationMidDay = new Salutation("Bonjour", "bjr", 11, 18);
-            this.salutationTwilight = new Salutation("Bonsoir", "bsr", 18, 0);
+            this.salutationTwilight = new Salutation("Bonsoir", "bsr", 18, 24);
             this.salutationNight = new Salutation("Bonne Nuit", "bnt", 0, 6);
             this.salutationMap = [this.salutationMorning, this.salutationMidDay, this.salutationTwilight, this.salutationNight];
             this.locale = "FR";
