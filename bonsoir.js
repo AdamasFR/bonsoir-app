@@ -1,6 +1,6 @@
 /**
  * Bonsoir ou Bonjour
- * - Renvoi la bonne interjection selon l'heure d'accès a l'api
+ * - Renvoi la bonne salutation selon l'heure d'accès a l'API
  */
 
 /**
@@ -15,6 +15,9 @@ class Salutation {
       }
 }
 
+/**
+ * French Salutation Setup
+ */
 class Bonsoir {
       constructor() {
             this.salutationMorning = new Salutation("Bonjour", "bjr", 6, 11);
