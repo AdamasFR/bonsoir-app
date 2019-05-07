@@ -1,5 +1,5 @@
 /**
- * Bonsoir ou Bonjour
+ * Bonsoir ou Bonjour - v1.0
  * - Renvoi la bonne salutation selon l'heure d'accès a l'API
  */
 
