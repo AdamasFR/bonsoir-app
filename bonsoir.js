@@ -32,7 +32,7 @@ class Bonsoir {
             var hourOfDay = new Date().getHours();
             var res = new Salutation().salutationFull;
             this.salutationMap.forEach(element => {
-                  if (element.timeStart < hourOfDay && element.timeStop > hourOfDay) {
+                  if (element.timeStart <= hourOfDay && element.timeStop >= hourOfDay) {
                         res = element.salutationFull;
                   }
             });
