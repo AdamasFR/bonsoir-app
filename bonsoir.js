@@ -4,8 +4,8 @@
  */
 
 class Bonsoir {
-      constructor() {
-            this.locale = "FR";
+      constructor(locale) {
+            this.locale = locale;
       }
 
       /**
@@ -14,7 +14,7 @@ class Bonsoir {
       getCurrentSalutation() {
             var hourOfDay = new Date().getHours();
             var res;
-            bonsoirFR.salutations.forEach(element => {
+            this.locale.salutations.forEach(element => {
                   if (element.timeStart <= hourOfDay && element.timeStop > hourOfDay) {
                         res = element;
                   }
@@ -29,10 +29,4 @@ class Bonsoir {
       salutationShort() {
             return this.getCurrentSalutation().salutationShort;
       }
-
-      getLocale() {
-            return this.locale;
-      }
 };
-
-var bonsoir = new Bonsoir();

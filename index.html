@@ -16,6 +16,7 @@
     <script src="./localization/bonsoir-fr.js"></script>
     <script src="./bonsoir.js"></script>
     <script>
+        var bonsoir = new Bonsoir(bonsoirFR);
         document.getElementById("salutation").innerHTML = bonsoir.salutation() + "!";
         document.getElementById("salutationShort").innerHTML = bonsoir.salutationShort() + "!";
     </script>

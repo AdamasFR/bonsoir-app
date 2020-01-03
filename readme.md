@@ -18,10 +18,12 @@ I need to sleep.
 ## Usage
 
 ```html
+<script src="../localization/bonsoir-fr.js"></script>
 <script src="../bonsoir.js"></script>
 ```
 
 ```javascript
 // Return "Bonjour" !
-bonsoir.salutation();
+var bonsoir = Bonsoir(bonsoirFR);
+bonsoir.salutation(); // returns Bonjour
 ```
