@@ -14,3 +14,14 @@ With the **ABSOLUTE POWER OF JAVASCRIPT** and **bonsoir.js** you can now serve t
 Don't forget all those people that don't enable JS and use a default salutation in plain old HTML, BUT, then sprinkle some BONJOUR with that sweet sweet javascript that everybody likes!
 
 I need to sleep.
+
+## Usage
+
+```html
+<script src="../bonsoir.js"></script>
+```
+
+```javascript
+// Return "Bonjour" !
+bonsoir.salutation();
+```

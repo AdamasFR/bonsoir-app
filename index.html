@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible"
+          content="ie=edge">
     <title>Test Page Bonsoir.js</title>
 </head>
 
 <body>
     <h1 id="salutation"></h1>
     <h2 id="salutationShort"></h2>
+    <script src="./localization/bonsoir-fr.js"></script>
     <script src="./bonsoir.js"></script>
     <script>
         document.getElementById("salutation").innerHTML = bonsoir.salutation() + "!";
