@@ -19,7 +19,7 @@ bonsoirFR = {
         },
         {
             "salutationFull": "Bonne Nuit",
-            "salutationShort": "bnt",
+            "salutationShort": "bonui",
             "timeStart": 0,
             "timeStop": 6
         }
