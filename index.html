@@ -11,14 +11,21 @@
 </head>
 
 <body>
-    <h1 id="salutation"></h1>
-    <h2 id="salutationShort"></h2>
+    <h1 id="salutationFR"></h1>
+    <h2 id="salutationShortFR"></h2>
+    <h1 id="salutationEN"></h1>
+    <h2 id="salutationShortEN"></h2>
     <script src="./localization/bonsoir-fr.js"></script>
+    <script src="./localization/bonsoir-en.js"></script>
     <script src="./bonsoir.js"></script>
     <script>
         var bonsoir = new Bonsoir(bonsoirFR);
-        document.getElementById("salutation").innerHTML = bonsoir.salutation() + "!";
-        document.getElementById("salutationShort").innerHTML = bonsoir.salutationShort() + "!";
+        document.getElementById("salutationFR").innerHTML = bonsoir.salutation() + "!";
+        document.getElementById("salutationShortFR").innerHTML = bonsoir.salutationShort() + "!";
+
+        var bonsoir = new Bonsoir(bonsoirEN);
+        document.getElementById("salutationEN").innerHTML = bonsoir.salutation() + "!";
+        document.getElementById("salutationShortEN").innerHTML = bonsoir.salutationShort() + "!";
     </script>
 </body>
 

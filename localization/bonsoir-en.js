@@ -1,10 +1,15 @@
-/**
- * Bonsoir English
- * - Returns Good Evening or Good day
- */
-class BonsoirEnglish extends Bonsoir {
-    constructor() {
-        
-    }
-};
-var bonsoir = new BonsoirEnglish();
+bonsoirEN = {
+    "meta": {
+        "version": "1.0",
+        "locale": "EN",
+        "traductor": "Anthony Dumas"
+    },
+    "salutations": [
+        {
+            "salutationFull": "Hello",
+            "salutationShort": "uwu",
+            "timeStart": 0,
+            "timeStop": 24
+        }
+    ]
+}
