@@ -24,6 +24,6 @@ I need to sleep.
 
 ```javascript
 // Return "Bonjour" !
-var bonsoir = Bonsoir(bonsoirFR);
+var bonsoir = new Bonsoir(bonsoirFR);
 bonsoir.salutation(); // returns Bonjour
 ```
