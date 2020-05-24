@@ -1,4 +1,4 @@
-![logo]['/logo.png']
+![logo](logo.png?raw=true)
 # bonsoir.js [![npm version](https://badge.fury.io/js/bonsoir.js.svg)](https://badge.fury.io/js/bonsoir.js)
 <a href="https://www.buymeacoffee.com/vGOXU0m" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
